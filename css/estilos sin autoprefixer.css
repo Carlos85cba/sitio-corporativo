@@ -1,0 +1,718 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* ESTILOS GENERALES */
+html,body {
+    height: 100%;
+}
+/* Fuentes */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.09rem;
+}
+
+/* Modificar el modelo de cajas de CSS */
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+*,*::before,*::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+/* .card img {
+    width: 20%;
+    height: auto;
+} */
+/* Resetear Margenes y Padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto
+}
+
+
+/* Estilos de los textos */
+h2 {
+	font-size: 1.45rem;
+	margin-bottom: 20px;
+}
+
+p {
+	line-height: 1.8;
+	padding-right: 1em;
+	margin-bottom: 25px;
+}
+
+/* Estilos de los botones */
+
+.btn {
+	display: block;
+	background-color: #ffa600;
+	width: 250px;
+	padding: 12px 1em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #ffa600;
+}
+
+.btn:hover {
+	background-color: transparent;
+	color: #000;
+}
+
+.transparent {
+	display: inline-block;
+	border: 1px solid #ffa600;
+	padding: 12px 1em;
+	width: 250px;
+	text-align: center;
+    text-decoration: none;
+    color: #000
+}
+
+.transparent:hover {
+    background-color: #ffa600;
+    color: #fff
+}
+/* Barra de navegacion */
+#navbar {
+	background-color: #0b1247;
+}
+
+#navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+#main-nav {
+	display: flex;
+	list-style: none;
+	font-family: 'Lato', Sans Serif;
+}
+
+#main-nav li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 25px 0.9em;
+	display: inline-block;
+}
+
+#main-nav li:last-child {
+	color: #ffa600;
+	padding: 25px 0.9em;
+}
+
+#main-nav li a:hover {
+	background-color: #060829;
+}
+
+#navbar-toogle {
+	color: #fff;
+	font-size: 1.5rem;
+	position: absolute;
+	top: 62px;
+	right: 35px;
+	display: none;
+}
+
+.logo {
+	width: 80px;
+	height: auto;
+}
+
+.top {
+	display: none;
+}
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #121018;
+}
+
+#PieDePagina {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+}
+
+footer h3 {
+	color: #9f9f9f;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+footer ul {
+	margin: 10px 0;
+}
+
+footer li {
+	list-style: none;
+	padding: 3px 0;
+}
+
+footer ul li a {
+	color: #9f9f9f;
+	text-decoration: none;
+	font-size: 0.88rem;
+}
+
+#social {
+	text-align: center;
+}
+
+#social .fab {
+	color: #fff;
+	font-size: 1.3rem;
+	margin-left: 0.30rem;
+}
+
+#copyright {
+	color: #9f9f9f;
+	text-align: center;
+	font-size: 0.8rem;
+	border-top: 1px solid #272323;
+	padding: 12px 0;
+}
+
+/* Estilos de la pagina de inicio */
+/* Seccion 1 */
+
+article#home > section:nth-child(1){
+    background-image: linear-gradient(rgba(26,26,50,0.7),rgba(26,26,50,0.7)), url(../images/gavel-book.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#seccionPrimera {
+	height: 100%;
+    min-height: 600px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#seccionPrimera h1 {
+	color: #fff;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+    font-family: arial,verdana,sans-serif;
+    background-color: transparent;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#seccionPrimera p {
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 15px 0;
+	margin-bottom: 0;
+}
+
+#seccionPrimera div {
+	text-align: center;
+}
+
+#seccionPrimera a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid;
+	display: inline-block;
+	padding: 12px 2.5em;
+	margin: 12px 0 0;
+}
+
+#seccionPrimera a:hover {
+	background-color: #aeaeae;
+	color: #000;
+}
+
+
+/* Seccion 2 */
+
+#seccionSegunda {
+	display: flex;
+	padding: 80px 0;
+}
+
+#seccionSegunda div {
+	padding: 0 0.5rem;
+	align-self: center;
+	flex-basis: 60%;
+}
+
+#seccionSegunda img {
+    flex-basis: 40%;
+    align-self: flex-start;
+    width: 40%;
+}
+
+/* Seccion 3 */
+article > section:nth-child(3) {
+	background-color: #f3f3f8;
+}
+
+
+#seccionTercera {
+	display: flex;
+}
+
+#seccionTercera.container {
+	width: 100%;
+}
+
+#seccionTercera div {
+	flex-basis: 50%;
+	padding-left: 2em;
+	align-self: center;
+}
+
+#seccionTercera img {
+    flex-basis: 50%;
+    width: 50%;
+}
+
+/* Seccion 4 */
+article > section:nth-child(4) {
+	text-align: center;
+	padding: 80px 0 12px;
+}
+
+#seccionCuarta {
+	display: flex;
+	margin-top: 80px;
+}
+.col {
+	margin: 0 0.9em;
+}
+
+.col .fas {
+	color: #ffa600;
+	font-size: 3rem;
+	margin-bottom: 25px;
+}
+
+.col h3 {
+	margin-bottom: 12px;
+	color: #3c3c3c;
+	font-size: 1.1rem;
+	font-weight: 100;
+}
+
+.col p {
+	font-size: 0.85rem;
+	text-align: justify;
+}
+
+/* Seccion 5 */
+article > section:nth-child(5) {
+	background-color: #f3f1fe;
+	padding: 50px 0;
+}
+
+#seccionQuinta {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Estilos de las paginas */
+/* La firma */
+main h1 {
+	background-color: #e69807;
+	padding: 45px 0;
+	margin-bottom: 40px;
+}
+
+main header h1 {
+    font-size: 1.9rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#pages {
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 80px;
+}
+
+#pages section {
+	flex-basis: 70%;
+}
+
+aside {
+	flex-basis: 30%;
+}
+
+#pages section {
+	flex-basis: 70%;
+	padding-right: 1em;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+aside h3 {
+	background-color: #f3f1fe;
+	padding: 12px 0 12px 0.5em;
+	margin-bottom: 20px;
+	font-size: 1.20rem;
+	font-weight: 100;
+}
+
+aside ul {
+	list-style: none;
+	margin: 0 0 30px 0.5em;
+}
+
+aside ul li a {
+	text-decoration: none;
+	line-height: 1.8;
+	color: #0b1245;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+#socialMedia {
+	margin: 0 0 25px 0.5em;
+	font-size: 2.5rem;
+}
+
+#socialMedia i {
+	margin-right: 0.80em;
+	color: #0b1247;
+}
+
+#boletin {
+	margin-left: 0.5em;
+}
+
+#boletin p {
+	font-size: 1rem;
+	margin-bottom: 12px;
+}
+
+#boletin label {
+	display: block;
+	font-size: 0.95rem;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+input#correo {
+	display: block;
+	width: 100%;
+	height: 45px;
+	margin-bottom: 12px;
+}
+
+#boletin input[type="submit"] {
+	background-color: #008000;
+	display: inline-block;
+	padding: 10px 1em;
+	color: #fff;
+	border: none;
+	width: 150px;
+	font-size: 0.95rem;
+}
+
+ /* areas de practica */
+
+ .row img {
+	float: left;
+    width: 55%;
+    height: 400px;
+	margin-right: 1em;
+	margin-bottom: 12px;
+}
+
+.row {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 22px;
+}
+
+.row p {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.row i {
+	color: #0b1247;
+	font-size: 1.10rem;
+	margin-bottom: 12px;
+}
+
+.asterisco {
+	color: #ff0000;
+}
+
+label {
+	display: block;
+	margin: 10px 0;
+	font-size: 0.98rem;
+}
+
+/* Formulario de contacto */
+
+form {
+	margin-right: 1em;
+}
+
+ input[type="text"], input[type="email"] {
+	display: inline-block;
+	width: 100%;
+	height: 45px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+}
+
+textarea#comentario {
+	width: 100%;
+	border: 1px solid #ccc;
+	margin-bottom: 30px; 
+}
+
+input[type="submit"] {
+	background-color: #008000;
+	display: inline-block;
+	padding: 10px 1em;
+	width: 100%;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1199px) {
+  
+    body {
+        font-size: 0.95rem;
+    }
+}
+
+/* Aplicar los siguientes estilos cuando el viewport tenga un tamaño que oscile entre 960px  y 1199px */
+@media screen and (min-width:960px) and (max-width:1199px)
+{
+    
+
+
+    #seccionPrimera h1 {
+            font-size: 2.5rem;
+        }
+        #seccionPrimera p {
+            font-size: 1.25rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        #seccionPrimera img {
+            flex-basis: 45%;
+            max-width:45%
+        }
+
+        #seccionTercera div {
+            flex-basis: 55%;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+
+        .col p {
+            text-align: center;
+        }
+
+        #pages {
+            margin-bottom: 12px;
+        }
+
+        #boletin p {
+            font-size: 0.95rem;
+        }
+
+        aside ul li a {
+            font-size: 0.95rem;
+        }
+
+        .row {
+            margin: 0 1em 25px 0;
+        }
+        .row img {
+            float: none;
+            width: 100%;
+        }
+        
+        .row i {
+            margin-bottom: 20px;
+            margin-right: 1em;
+        }
+        .row p {
+            text-align: justify;
+        }
+
+        .transparent {
+            margin-bottom: 30px;
+        }
+
+        #pages .row:not(:last-child) {
+            border-bottom: 1px solid #ccc;
+        }
+     
+}
+
+/* Aplicar los siguientes estilos cuando el viewport tenga un tamaño que sea menor a 959 */
+@media screen and (max-width:959px) {
+#navigation {
+    display: block;
+}
+#main-nav {
+	display: none;
+	flex-direction: column;
+}
+#navbar-toogle {
+    display: block;
+}
+
+#main-nav li a {
+	display: block;
+	padding: 15px 1em;
+}
+
+#main-nav li:not(:last-child) {
+	border-bottom: 1px solid #353535;
+}
+/* Para no mostrar en el menu ya que se tiene que visualizar siempre */
+#main-nav li:last-child {
+	display: none;
+}
+.top {
+	background-color: #000;
+	color: #ffa600;
+	padding: 12px 0;
+    font-size: 0.85rem;
+    display: block;
+}
+.top ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+/* Estilos de la pagina de inicio */
+#seccionPrimera h1 {
+	font-size: 2.5rem;
+}
+
+#seccionPrimera p {
+	font-size: 1.25rem;
+}
+
+#seccionSegunda, #seccionTercera, #seccionCuarta, #seccionQuinta {
+	flex-direction: column;
+}
+
+#seccionSegunda div, #seccionTercera div {
+	padding: 0;
+	align-self: normal;
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.btn,.transparent {
+	width: 100%;
+}
+
+#seccionSegunda img,#seccionTercera img {
+	display: none;
+}
+
+#seccionTercera.container {
+	width: 90%;
+}
+
+#seccionTercera.container {
+	width: 90%;
+	padding: 20px 0;
+}
+
+article > section:nth-child(4) {
+	padding: 35px 0 12px 0;
+}
+
+#seccionCuarta {
+	display: flex;
+	margin-top: 35px auto;
+}
+
+.col {
+	margin: 20px 0.9em 30px;
+	border: 1px solid #ffa600;
+	padding: 30px 2em;
+}
+
+.col p {
+	text-align: center;
+}
+#seccionQuinta {
+	text-align: center;
+}
+
+/* Estilos del resto de las paginas */
+#pages section {
+	flex-basis: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+aside {
+	flex-basis: 100%;
+}
+
+
+.row img {
+	float: none;
+	width: 100%;
+}
+
+#pages .row:not(:last-child) {
+	border-bottom: 1px solid #ccc;
+}
+
+.transparent {
+	margin-bottom: 20px;
+}
+
+.row i {
+	margin-right: 1em;
+}
+}
+/* Aplicar los siguientes estilos cuando el viewport sea igual o menor quer 659px */
+@media screen and (max-width:659px) {
+    #PieDePagina {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
